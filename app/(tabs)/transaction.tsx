@@ -1,5 +1,4 @@
 import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react-native";
 import React from "react";
 import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 
@@ -13,9 +12,7 @@ export default function HomeScreen() {
                         placeholder="Cari sayur segar..."
                         className="pl-10 bg-white border-0 rounded-full h-12"
                     />
-                    <View className="absolute left-3 top-3">
-                        <Search size={20} color="gray" />
-                    </View>
+                    <View className="absolute left-3 top-3"></View>
                 </View>
             </View>
 
@@ -66,12 +63,14 @@ export default function HomeScreen() {
             <View className="px-4 pb-10">
                 <Text className="text-lg font-bold mb-4">Produk Segar</Text>
                 <View className="flex-row flex-wrap justify-between">
+                    {/* Contoh Card Produk */}
                     {[1, 2, 3, 4].map((item) => (
                         <View
                             key={item}
                             className="w-[48%] bg-white p-3 rounded-2xl mb-4 shadow-sm border border-gray-100"
                         >
                             <View className="w-full h-32 bg-gray-200 rounded-xl mb-3" />{" "}
+                            {/* Placeholder Image */}
                             <Text className="font-bold text-gray-800">
                                 Sayur Bayam
                             </Text>
